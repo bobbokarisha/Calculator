@@ -13,6 +13,7 @@ while(!int.TryParse(firstInput, out int number))
 }
 
 int firstNumber = Convert.ToInt32(firstInput);
+string secondInput = Console.ReadLine();
 
 Console.Write("Enter Operator: ");
 string op = Console.ReadLine();
