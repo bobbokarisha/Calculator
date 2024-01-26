@@ -1,6 +1,5 @@
 ﻿
 
-
 namespace Calculator
 {
     class Program
@@ -17,7 +16,7 @@ namespace Calculator
                 int firstNum;
                 int secondNum;
 
-                
+
 
                 do
                 {
@@ -32,6 +31,7 @@ namespace Calculator
                     }
                 } while (!parseSuccessful);
 
+
                 string operator1;
                 do
                 {
@@ -39,7 +39,7 @@ namespace Calculator
                     operator1 = Console.ReadLine();
                 } while (operator1 != "+" && operator1 != "-" && operator1 != "*" && operator1 != "/");
 
-                
+
                 do
                 {
 
@@ -56,6 +56,7 @@ namespace Calculator
                 } while (!parseSuccessful);
 
                 Calculator calculator = new Calculator();
+
 
                 switch (operator1)
                 {
@@ -75,7 +76,7 @@ namespace Calculator
 
                 Console.WriteLine("Do you want to calculate again? Y/N");
                 string runAgainInput = Console.ReadLine();
-                if(runAgainInput.ToLower() == "y")
+                if (runAgainInput.ToLower() == "y")
                 {
                     runProgram = true;
                 }
@@ -83,34 +84,6 @@ namespace Calculator
                 {
                     runProgram = false;
                 }
-            }
-        }
-    }
-
-    public class Calculator
-    {
-        public int Add(int firstNum, int secondNum)
-        {
-            return firstNum + secondNum;
-        }
-        public int Sub(int firstNum, int secondNum)
-        {
-            return firstNum - secondNum;
-        }
-        public int Mul(int firstNum, int secondNum)
-        {
-            return firstNum * secondNum;
-        }
-        public int Div(int firstNum, int secondNum)
-        {
-            if (secondNum != 0)
-            {
-                return firstNum / secondNum;
-            }
-            else
-            {
-                Console.WriteLine("Error: Division by zero.");
-                return 0;
             }
         }
     }
