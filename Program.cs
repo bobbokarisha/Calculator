@@ -1,4 +1,4 @@
-﻿
+﻿using Calculator.Calculations;
 
 namespace Calculator
 {
@@ -55,8 +55,7 @@ namespace Calculator
                     }
                 } while (!parseSuccessful);
 
-                Calculator calculator = new Calculator();
-
+                Calc calculator = new();
 
                 switch (operator1)
                 {

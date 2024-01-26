@@ -1,8 +1,8 @@
 ﻿
 
-namespace Calculator
-{ 
-    public class Calculator
+namespace Calculator.Calculations
+{
+    public class Calc
     {
         public int Add(int firstNum, int secondNum)
         {
